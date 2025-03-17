@@ -6,6 +6,12 @@
     <title>Huddle Landing Page</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- Add FontAwesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/fb5b6336f0.js" crossorigin="anonymous"></script> 
     <style>
         .attribution{
@@ -13,24 +19,155 @@
             text-align: center;
         }
     
-        .attribution>a{
-            color: aquamarine;
+        .attribution{
+            color: rgb(83, 29, 184);
+        }
+        .cta-section {
+            background-image: url('./images/bg-cta-section.svg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-btn {
+            background-color: #ff52bf;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+
+        .cta-btn:hover {
+            background-color: #ff3aaf;
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <img src="./images/logo.svg" alt="logo">
-            <button class="cta-btn">Try It Free</button>
+        <nav class="nav-row">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Huddle Logo">
+            </div>
+            <div><button class="cta-btn-header">Try It Free</button></div>
         </nav>
+
+        <div class="hero-section">
+            <div class="hero-content">
+                <h2>Build The Community Your Fans will Love</h2>
+
+            <p> Huddle re-imagines the way we build our communities. You have a voice, but so does your audience. Create connections with users as you engage genuinely.</p>
+            <button class="hero-btn">Get Started For Free</button>
+            </div>
+            <div class="hero-image">
+                <img src="./images/illustration-mockups.svg" alt="Illustration Mockups">
+            </div>
+
+
+        </div>
+        
 
     </header>
     <main>
+        <section>
+            <div class="row reverse">
+               <div class="col-6">
+                   <img src="./images/illustration-grow-together.svg" alt="Grow Together">
+               </div>
+               <div class="col-6 content-section">
+                <h2>Grow Together</h2>
+                
+                <p>Generate meaningful discussion with your audience to build a strong, loyal community. Think of insightful conversations you miss out on with a feedback form.</p>
+
+               </div>
+
+
+        
+            </div>
+     </section>
+       
+          <section>
+          <div class="row reverse">
+            <div class="col-6 content-section">
+                <h2>Flowing Conversation</h2>
+                 <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+             </div>
+             <div class="col-6 img-section">
+                <img src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversation">
+             </div>
+             </div>
+        </section>
+        <section>
+            <div class="row reverse">
+                <div class="col-6">
+                    <img src="./images/illustration-your-users.svg" alt="Your Users">
+                </div>
+                <div class="col-6 content-section">
+                    <h2>Your Users</h2>
+                    <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in, your users can start chatting immediately.</p>
+                </div>
+             </div>
+         </section>
+         <!-- Updated section -->
+         
 
     </main>
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready To Build Your Community?</h2>
+            <button class="cta-btn-main">Get Started For Free</button>
+        </div>
+    </section>
     <footer>
-
+        <div class="footer-container">
+            <div class="row">
+                <div class="contact-list">
+                    <img src="./images/logo.svg" alt="Huddle Logo">
+                    <ul>
+                        <li class="location">We are located in Hong Kong, Kakuma 1, Next to the Youth Centre 2</li>
+                        <li class="phone">+254117165804</li>
+                        <li class="email">alirefat705@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">What We Do</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 alirefat705. All rights reserved.</p>
+            </div>
+            <div class="attribution">
+                <p>Built with love by Refat ALI</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

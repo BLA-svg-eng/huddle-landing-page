@@ -1,0 +1,458 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Sans-serif";
+    font-size: 19px;
+    text-align: center;
+    background-color: #f0f4f8; /* Set a light background color */
+}
+header {
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-color: #ebfbff;
+    height: auto;
+}
+h1, h2 {
+    color: #00252e;
+    font-family: "Poppins", sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.logo {
+    width: 105px;
+    height: 17px;
+    float: left;
+}
+.cta-btn {
+    float: right;
+    position: relative;
+    border: none;
+    border-radius: 12px;
+    padding: 6px 25px;
+    font-size: 10px;
+    background-color: #ff52bf; /* Consistent background color */
+    box-shadow: 0px 1px 8px -1px;
+    bottom: 3px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 10px; /* Move the button a little bit higher */
+    display: block; /* Ensure the button is a block element */
+    margin-left: auto;
+    margin-right: auto; /* Center the button */
+}
+.cta-btn:hover {
+    background-color: #ff3aaf; /* Consistent hover color */
+}
+
+.cta-btn-header {
+    float: right;
+    position: relative;
+    border: none;
+    border-radius: 12px;
+    padding: 6px 25px;
+    font-size: 10px;
+    background-color: #ff52bf; /* Consistent background color */
+    box-shadow: 0px 1px 8px -1px;
+    bottom: 3px;
+    color: white;
+    cursor: pointer;
+    display: block; /* Ensure the button is a block element */
+    margin-left: auto;
+    margin-right: auto; /* Center the button */
+}
+
+.cta-btn-header:hover {
+    background-color: #ff3aaf; /* Consistent hover color */
+}
+
+.hero-btn {
+    padding: 12px;
+    color: #fff;
+    background-color: #ff52bf;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 48px;
+    background-color: #ff52bf;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #ff3aaf; /* Consistent hover color */
+}
+
+.cta-btn-main {
+    background-color: #ff52bf;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: block; /* Ensure the button is a block element */
+    margin-left: auto;
+    margin-right: auto; /* Center the button */
+}
+
+.cta-btn-main:hover {
+    background-color: #ff3aaf; /* Consistent hover color */
+}
+
+.nav-row {
+    padding: 28px 8px 0px;
+    margin-bottom: 101px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative; /* Remove relative positioning */
+}
+
+.social-icons {
+    position: static; /* Reset positioning */
+    top: auto; /* Reset top position */
+    right: auto; /* Reset right position */
+}
+
+.social-icons ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #ff52bf;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.hero-section {
+    display: flex;
+    margin: 0px 36px;
+    padding: 24px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.hero-content {
+    margin-right: 50px;
+    max-width: 500px;
+}
+.hero-section h2 {
+    font-size: 22px;
+}
+.hero-section p {
+    font-size: 14px;
+    margin-bottom: 31px;
+    line-height: 23px;
+}
+.hero-section .hero-btn {
+    padding: 12px;
+    color: #fff;
+    background-color: #ff52bf;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 48px;
+    background-color: #ff52bf;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+main {
+    margin-top: 60px;
+    padding: 0 80px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px; /* Add bottom margin to prevent overlap */
+}
+section {
+    box-shadow: 0px 1px 8px -1px;
+    border-radius: 9px;
+    margin: 40px 0px; /* Adjust margin for proper spacing */
+    padding: 40px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+.col-6 {
+    flex: 0 0 50%;
+}
+.content-section {
+    max-width: 500px;
+}
+.social-icons ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.social-icons li {
+    margin-right: 10px;
+}
+.social-icons a {
+    color: #ff52bf;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-container {
+    padding: 60px 20px; /* Increase padding for better spacing */
+    background-color: #333; /* Dark background color for footer */
+    color: white; /* White text color for footer */
+    text-align: center;
+    position: relative; /* Add relative positioning */
+    z-index: 0; /* Ensure the footer is below the card */
+}
+
+.footer-container .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 20px;
+}
+
+.footer-container .contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+}
+
+.footer-container .contact-list img {
+    max-width: 150px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1); /* Make the logo white */
+}
+
+.footer-container .contact-list ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align text to the left */
+    margin-top: 0; /* Remove top margin */
+}
+
+.footer-container .nav-footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Add space between the two columns */
+}
+
+.footer-container .nav-footer .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container .nav-footer ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align text to the left */
+    color: white; /* Ensure the text color is white */
+}
+
+.footer-container .nav-footer li {
+    margin: 5px 0;
+}
+
+.footer-container .nav-footer a {
+    color: white; /* Ensure the link color is white */
+    text-decoration: none;
+}
+
+.footer-container .nav-footer a:hover {
+    text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+.footer-container .social-icons ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container .social-icons li {
+    margin: 0 10px;
+}
+
+.footer-container .social-icons a {
+    color: white; /* White color for social icons */
+    font-size: 24px;
+}
+
+.footer-container .social-icons a:hover {
+    color: #ff52bf;
+}
+
+.footer-container .copyright {
+    margin-top: 20px; /* Restore top margin */
+    position: static; /* Remove absolute positioning */
+    bottom: auto; /* Reset bottom position */
+    left: auto; /* Reset left position */
+    text-align: center; /* Center align text */
+}
+
+.footer-container .attribution {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb; /* Light gray color for attribution text */
+}
+
+.cta-section {
+    background-image: url('./images/bg-cta-section.svg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: -30px; /* Negative margin to overlap the footer */
+    z-index: 1; /* Ensure the card is above the footer */
+    position: relative; /* Ensure proper stacking context */
+}
+
+.cta-section {
+    background:  #fff;
+    padding: 20px; /* Add padding for better spacing */
+    position: relative;
+    margin-bottom: -60px; /* Move the content up */
+    margin-left: 60px; /* Move the content to the right */
+    margin-right: 60px; /* Move the content to the left */
+
+}
+
+@media (max-width: 1200px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .hero-section img {
+        max-width: 100%;
+        height: auto;
+    }
+    .footer-container .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-container .contact-list ul, .footer-container .nav-footer ul, .footer-container .social-icons ul {
+        text-align: center;
+    }
+    .footer-container .nav-footer li, .footer-container .social-icons li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-btn, .cta-btn-header, .cta-btn-main, .hero-btn {
+        width: 100%;
+        padding: 10px;
+    }
+    .hero-section {
+        padding: 20px;
+    }
+    .hero-section h2 {
+        font-size: 18px;
+    }
+    .hero-section p {
+        font-size: 12px;
+    }
+    main {
+        padding: 0 20px;
+    }
+    section {
+        padding: 20px;
+    }
+    .row {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .col-6 {
+        flex: 0 0 100%;
+    }
+    .footer-container {
+        padding: 20px;
+    }
+    .footer-container .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-container .contact-list img {
+        max-width: 100px;
+    }
+    .footer-container .contact-list ul, .nav-footer ul, .social-icons ul {
+        text-align: center;
+    }
+    .nav-footer li, .social-icons li {
+        margin: 10px 0;
+    }
+    .footer-container .nav-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-container .nav-footer .column {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    .cta-section {
+        padding: 20px 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cta-btn, .cta-btn-header, .cta-btn-main, .hero-btn {
+        font-size: 14px;
+    }
+    .hero-section h2 {
+        font-size: 16px;
+    }
+    .hero-section p {
+        font-size: 10px;
+    }
+    .footer-container {
+        padding: 10px;
+    }
+    .footer-container .footer-row {
+        margin-bottom: 10px;
+    }
+    .footer-container .contact-list img {
+        max-width: 80px;
+    }
+    .social-icons a {
+        font-size: 20px;
+    }
+}
+
