@@ -7,7 +7,7 @@ body {
     font-family: "Open Sans", "Sans-serif";
     font-size: 19px;
     text-align: center;
-    background-color: #f0f4f8; /* Set a light background color */
+    background-color:white; /* Set a light background color */
 }
 header {
     background-image: url(./images/bg-hero-desktop.svg);
@@ -240,7 +240,20 @@ section {
 .footer-container .contact-list {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align the content */
+    align-items: flex-start; /* Align content to the left */
+    text-align: left; /* Align text to the left */
+    gap: 10px; /* Add spacing between elements */
+}
+
+.footer-container .contact-list p.location {
+    margin: 0;
+    line-height: 1.5; /* Improve readability */
+}
+
+.footer-container .contact-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-container .contact-list img {
@@ -252,7 +265,7 @@ section {
 .footer-container .contact-list ul {
     list-style: none;
     padding: 0;
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Center align text */
     margin-top: 0; /* Remove top margin */
 }
 
@@ -309,11 +322,11 @@ section {
 }
 
 .footer-container .copyright {
-    margin-top: 20px; /* Restore top margin */
-    position: static; /* Remove absolute positioning */
-    bottom: auto; /* Reset bottom position */
-    left: auto; /* Reset left position */
-    text-align: center; /* Center align text */
+    margin-top: 0; /* Remove top margin */
+    position: absolute; /* Position it absolutely */
+    bottom: 10px; /* Align it to the bottom */
+    right: 20px; /* Align it to the right */
+    text-align: right; /* Align text to the right */
 }
 
 .footer-container .attribution {
