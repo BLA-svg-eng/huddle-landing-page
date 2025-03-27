@@ -5,18 +5,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Open Sans", "Sans-serif";
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
-    background-color:white; /* Set a light background color */
+    background-color: white;
 }
 header {
     background-image: url(./images/bg-hero-desktop.svg);
-    background-color: #ebfbff;
+    background-color: hsl(193, 100%, 96%);
     height: auto;
+    padding-bottom: 60px;
 }
 h1, h2 {
-    color: #00252e;
+    color: hsl(192, 100%, 9%);
     font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
 img {
     width: 100%;
@@ -34,7 +36,7 @@ img {
     border-radius: 12px;
     padding: 6px 25px;
     font-size: 10px;
-    background-color: #ff52bf; /* Consistent background color */
+    background-color: hsl(322, 100%, 66%);
     box-shadow: 0px 1px 8px -1px;
     bottom: 3px;
     color: white;
@@ -46,56 +48,47 @@ img {
     font-size: 16px;
     cursor: pointer;
     border-radius: 25px;
-    margin-top: 10px; /* Move the button a little bit higher */
-    display: block; /* Ensure the button is a block element */
+    margin-top: 10px;
+    display: block;
     margin-left: auto;
-    margin-right: auto; /* Center the button */
+    margin-right: auto;
 }
 .cta-btn:hover {
-    background-color: #ff3aaf; /* Consistent hover color */
+    background-color: hsl(322, 100%, 66%);
+    opacity: 0.8;
 }
-
 .cta-btn-header {
     float: right;
     position: relative;
     border: none;
-    border-radius: 12px;
-    padding: 6px 25px;
-    font-size: 10px;
-    background-color: #ff52bf; /* Consistent background color */
+    border-radius: 25px;
+    padding: 12px 40px;
+    font-size: 14px;
+    background-color: hsl(322, 100%, 66%);
     box-shadow: 0px 1px 8px -1px;
-    bottom: 3px;
     color: white;
     cursor: pointer;
-    display: block; /* Ensure the button is a block element */
-    margin-left: auto;
-    margin-right: auto; /* Center the button */
+    transition: opacity 0.3s ease;
 }
-
 .cta-btn-header:hover {
-    background-color: #ff3aaf; /* Consistent hover color */
+    opacity: 0.8;
 }
-
 .hero-btn {
-    padding: 12px;
-    color: #fff;
-    background-color: #ff52bf;
-    border-radius: 40px;
+    padding: 15px 60px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 25px;
     border: none;
     margin-bottom: 48px;
-    background-color: #ff52bf;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
     cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
 }
-
 .hero-btn:hover {
-    background-color: #ff3aaf; /* Consistent hover color */
+    opacity: 0.8;
 }
-
 .cta-btn-main {
-    background-color: #ff52bf;
+    background-color: hsl(322, 100%, 66%);
     color: white;
     border: none;
     padding: 15px 30px;
@@ -103,93 +96,87 @@ img {
     cursor: pointer;
     border-radius: 25px;
     margin-top: 20px;
-    display: block; /* Ensure the button is a block element */
+    display: block;
     margin-left: auto;
-    margin-right: auto; /* Center the button */
+    margin-right: auto;
 }
-
 .cta-btn-main:hover {
-    background-color: #ff3aaf; /* Consistent hover color */
+    background-color: hsl(322, 100%, 66%);
+    opacity: 0.8;
 }
-
 .nav-row {
     padding: 28px 8px 0px;
     margin-bottom: 101px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    position: relative; /* Remove relative positioning */
+    padding: 20px 80px;
+    position: relative;
 }
-
 .social-icons {
     position: static; /* Reset positioning */
     top: auto; /* Reset top position */
     right: auto; /* Reset right position */
 }
-
 .social-icons ul {
     display: flex;
     list-style: none;
     padding: 0;
 }
-
 .social-icons li {
     margin-right: 10px;
 }
-
 .social-icons a {
     color: #ff52bf;
     font-size: 24px;
     text-decoration: none;
 }
-
 .hero-section {
     display: flex;
-    margin: 0px 36px;
-    padding: 24px;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding: 0 80px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .hero-content {
     margin-right: 50px;
     max-width: 500px;
+    text-align: left;
 }
 .hero-section h2 {
-    font-size: 22px;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: hsl(192, 100%, 9%);
 }
 .hero-section p {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 31px;
-    line-height: 23px;
+    line-height: 1.6;
+    color: hsl(208, 11%, 55%);
 }
-.hero-section .hero-btn {
-    padding: 12px;
-    color: #fff;
-    background-color: #ff52bf;
-    border-radius: 40px;
-    border: none;
-    margin-bottom: 48px;
-    background-color: #ff52bf;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
 }
 main {
-    margin-top: 60px;
+    margin-top: 120px;
     padding: 0 80px;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px; /* Add bottom margin to prevent overlap */
+    margin-bottom: 120px;
 }
 section {
     box-shadow: 0px 1px 8px -1px;
     border-radius: 9px;
-    margin: 40px 0px; /* Adjust margin for proper spacing */
-    padding: 40px;
+    margin: 40px 0px;
+    padding: 60px;
 }
 .row {
     display: flex;
@@ -206,6 +193,16 @@ section {
 .content-section {
     max-width: 500px;
 }
+.content-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.content-section p {
+    color: hsl(208, 11%, 55%);
+    text-align: left;
+    line-height: 1.6;
+}
 .social-icons ul {
     display: flex;
     list-style: none;
@@ -219,185 +216,210 @@ section {
     font-size: 24px;
     text-decoration: none;
 }
-
 .footer-container {
-    padding: 60px 20px; /* Increase padding for better spacing */
-    background-color: #333; /* Dark background color for footer */
-    color: white; /* White text color for footer */
+    padding: 120px 20px 40px;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
     text-align: center;
-    position: relative; /* Add relative positioning */
-    z-index: 0; /* Ensure the footer is below the card */
+    position: relative;
+    z-index: 0;
 }
-
 .footer-container .footer-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
     margin-bottom: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
 }
-
 .footer-container .contact-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align content to the left */
-    text-align: left; /* Align text to the left */
-    gap: 10px; /* Add spacing between elements */
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+    max-width: 350px;
 }
-
 .footer-container .contact-list p.location {
     margin: 0;
-    line-height: 1.5; /* Improve readability */
+    line-height: 1.6;
+    color: hsl(208, 11%, 55%);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
 }
-
 .footer-container .contact-list ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
+.footer-container .contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: hsl(208, 11%, 55%);
+}
 .footer-container .contact-list img {
     max-width: 150px;
     margin-bottom: 20px;
-    filter: brightness(0) invert(1); /* Make the logo white */
+    filter: brightness(0) invert(1);
 }
-
-.footer-container .contact-list ul {
-    list-style: none;
-    padding: 0;
-    text-align: center; /* Center align text */
-    margin-top: 0; /* Remove top margin */
-}
-
 .footer-container .nav-footer {
     display: flex;
-    justify-content: center;
-    gap: 50px; /* Add space between the two columns */
+    justify-content: space-between;
+    gap: 100px;
 }
-
 .footer-container .nav-footer .column {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
-
 .footer-container .nav-footer ul {
     list-style: none;
     padding: 0;
-    text-align: left; /* Align text to the left */
-    color: white; /* Ensure the text color is white */
+    text-align: left;
 }
-
 .footer-container .nav-footer li {
-    margin: 5px 0;
+    margin: 10px 0;
 }
-
 .footer-container .nav-footer a {
-    color: white; /* Ensure the link color is white */
+    color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
-
 .footer-container .nav-footer a:hover {
-    text-decoration: underline; /* Add underline on hover for better visibility */
+    color: hsl(322, 100%, 66%);
 }
-
+.footer-container .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
 .footer-container .social-icons ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    gap: 15px;
 }
-
-.footer-container .social-icons li {
-    margin: 0 10px;
-}
-
 .footer-container .social-icons a {
-    color: white; /* White color for social icons */
+    color: white;
     font-size: 24px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
 }
-
 .footer-container .social-icons a:hover {
-    color: #ff52bf;
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
 }
-
 .footer-container .copyright {
-    margin-top: 0; /* Remove top margin */
-    position: absolute; /* Position it absolutely */
-    bottom: 10px; /* Align it to the bottom */
-    right: 20px; /* Align it to the right */
-    text-align: right; /* Align text to the right */
+    margin-top: 40px;
+    text-align: right;
+    color: hsl(208, 11%, 55%);
+    font-size: 14px;
 }
-
 .footer-container .attribution {
     margin-top: 10px;
     font-size: 12px;
-    color: #bbb; /* Light gray color for attribution text */
+    color: #bbb;
 }
-
 .cta-section {
-    background-image: url('./images/bg-cta-section.svg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 50px 20px;
-    margin-bottom: -30px; /* Negative margin to overlap the footer */
-    z-index: 1; /* Ensure the card is above the footer */
-    position: relative; /* Ensure proper stacking context */
-}
-
-.cta-section {
-    background:  #fff;
-    padding: 20px; /* Add padding for better spacing */
+    background: #fff;
+    padding: 40px;
     position: relative;
-    margin-bottom: -60px; /* Move the content up */
-    margin-left: 60px; /* Move the content to the right */
-    margin-right: 60px; /* Move the content to the left */
-
+    margin-bottom: -60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+    box-shadow: 0px 1px 8px -1px;
+    border-radius: 9px;
+    z-index: 1;
 }
-
+.cta-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
 @media (max-width: 1200px) {
     .hero-section {
         flex-direction: column;
         text-align: center;
+        padding: 0 20px;
     }
     .hero-content {
         margin-right: 0;
         max-width: 100%;
+        text-align: center;
     }
-    .hero-section img {
+    .hero-section h2 {
+        text-align: center;
+    }
+    .hero-section p {
+        text-align: center;
+    }
+    .hero-image {
         max-width: 100%;
-        height: auto;
+        margin-top: 40px;
     }
     .footer-container .footer-row {
         flex-direction: column;
         align-items: center;
+        padding: 0 20px;
     }
-    .footer-container .contact-list ul, .footer-container .nav-footer ul, .footer-container .social-icons ul {
+    .footer-container .contact-list {
+        align-items: center;
         text-align: center;
     }
-    .footer-container .nav-footer li, .footer-container .social-icons li {
-        margin: 10px 0;
+    .footer-container .contact-list p.location,
+    .footer-container .contact-list li {
+        justify-content: center;
     }
-}
-
-@media (max-width: 768px) {
-    .nav-row {
+    .footer-container .nav-footer {
         flex-direction: column;
         align-items: center;
+        gap: 50px;
+    }
+    .footer-container .nav-footer .column {
+        align-items: center;
+    }
+    .footer-container .nav-footer ul {
+        text-align: center;
+    }
+    .footer-container .social-icons {
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .nav-row {
+        padding: 20px;
     }
     .cta-btn, .cta-btn-header, .cta-btn-main, .hero-btn {
         width: 100%;
         padding: 10px;
     }
     .hero-section {
-        padding: 20px;
+        padding: 0 20px;
     }
     .hero-section h2 {
-        font-size: 18px;
+        font-size: 28px;
     }
     .hero-section p {
-        font-size: 12px;
+        font-size: 16px;
+    }
+    .hero-btn {
+        padding: 12px 40px;
+        font-size: 14px;
     }
     main {
         padding: 0 20px;
@@ -413,17 +435,17 @@ section {
         flex: 0 0 100%;
     }
     .footer-container {
-        padding: 20px;
+        padding: 60px 20px 20px;
     }
     .footer-container .footer-row {
-        flex-direction: column;
-        align-items: center;
+        padding: 0;
     }
     .footer-container .contact-list img {
-        max-width: 100px;
+        max-width: 120px;
     }
-    .footer-container .contact-list ul, .nav-footer ul, .social-icons ul {
+    .footer-container .copyright {
         text-align: center;
+        margin-top: 20px;
     }
     .nav-footer li, .social-icons li {
         margin: 10px 0;
@@ -436,7 +458,6 @@ section {
         margin-bottom: 20px;
     }
 }
-
 @media (max-width: 480px) {
     body {
         font-size: 16px;
@@ -467,5 +488,12 @@ section {
     .social-icons a {
         font-size: 20px;
     }
+}
+
+/* Attribution styles */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: rgb(83, 29, 184);
 }
 
